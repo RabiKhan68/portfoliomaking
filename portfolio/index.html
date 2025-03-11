@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer PortFolio</title>
+    <style>
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(43, 43, 104);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(43, 43, 115);
+        }
+
+        .left {
+            font-size: 1.5rem;
+            margin-left: -30px;
+        }
+
+        .left:hover {
+            animation: auto-animation 3s infinite alternate ease-in-out;
+            color: blueviolet;
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+
+        @keyframes auto-animation {
+            0% {
+                color: blueviolet;
+                transform: scale(1);
+            }
+
+            50% {
+                color: white;
+                transform: scale(1.5);
+            }
+
+            100% {
+                color: rgb(39, 39, 81);
+                transform: scale(1);
+            }
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            transition: 0.5s;
+            color: purple;
+            font-size: 1.2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 140px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 30px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            font-size: 1rem;
+            background: rgb(86, 86, 243);
+            color: white;
+            border: solid;
+            border-color: rgb(116, 116, 247);
+        }
+
+        .leftSection .btn:hover {
+            transition: 0.6s ease-in;
+            color: blueviolet;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: grey;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            border: 0;
+            background: blueviolet;
+            height: 1px;
+            margin: 40px 84px;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 85vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: rgb(70, 44, 89);
+            
+        }
+
+        .footer > div {
+            width: 223px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer-second {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .footer-second .ul {
+            color: white;
+        }
+
+        .footer-third {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .footer-rights {
+            font-size: 16px;
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Rabi Khan Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Rabi</span>
+                <div>and I am a passionate</div>
+                <div>Web Developer.</div>
+                <span id="element"></span>
+                <br>
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit Github</button>
+            </div>
+            <div class="rightSection">
+                <img src="a.png.png" alt = "image">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical"><img class="image-top" src="q.png" alt="image">
+                    <div class="vertical-title">
+                        HTML DEVELOPER (2022-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae eveniet
+                        ducimus nobis sunt tempore, labore doloribus iusto doloremque voluptas error
+                        magni dignissimos consectetur adipisci dolores necessitatibus
+                        vero rerum quis!
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="u.png" alt="image">
+                    <div class="vertical-title">
+                        PROGRAMMER (2023-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae eveniet ducimus nobis
+                        sunt tempore, labore doloribus iusto doloremque voluptas error magni dignissimos consectetur
+                        adipisci dolores necessitatibus vero rerum quis!
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="o.png.png" alt="image">
+                    <div class="vertical-title">
+                        APP DEVELOPER (2023-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae eveniet ducimus nobis
+                        sunt tempore, labore doloribus iusto doloremque voluptas error magni dignissimos consectetur
+                        adipisci dolores necessitatibus vero rerum quis!
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="pngwing.com (1).png" alt="image">
+                    <div class="vertical-title">
+                        DATA BASE MANAGER USING MYSQL (2022-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae eveniet ducimus nobis
+                        sunt tempore, labore doloribus iusto doloremque voluptas error magni dignissimos consectetur
+                        adipisci dolores necessitatibus vero rerum quis!
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="pngwing.com.png" alt="image">
+                    <div class="vertical-title">
+                        GRAPHICS DESIGNER FOR BRANDS (2024-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae eveniet ducimus nobis
+                        sunt tempore, labore doloribus iusto doloremque voluptas error magni dignissimos consectetur
+                        adipisci dolores necessitatibus vero rerum quis!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Rabi's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <li><a href="#youtube">Youtube</a></li>
+                <li><a href="#youtube">Instagram</a></li>
+                <li><a href="#youtube">Facebook</a></li>
+                <li><a href="#youtube">Fiverr</a></li>
+            </div>
+            <div class="footer-third">
+                <li><a href="#youtube">Infra</a></li>
+                <li><a href="#youtube">Coursera</a></li>
+                <li><a href="#youtube">w3Schools</a></li>
+                <li><a href="#youtube">Youth Program</a></li>
+            </div>
+            <div class="footer-rights">
+                <h3>Copyright &#169; rabi'sPortfolio.com | All rights reserved.</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Programmer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
